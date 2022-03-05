@@ -1,0 +1,53 @@
+html {
+    box-sizing: content-box;
+}
+
+html * {
+    box-sizing: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    background-color: rgb(216, 209, 209);
+    padding: 30px;
+    box-shadow: 1px 2px 5px rgb(0,0,0,0.5);
+    z-index: 1;
+    position: relative;
+}
+
+header input {
+    outline: none;
+    border: solid 1px rgb(216, 210, 210);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    background-color: #eee;
+    justify-content: center;
+}
+
+.center {
+    column-count: 3;
+    width: 1200px;
+}
+
+.card {
+    width: 350px;
+    display: inline-block;
+    margin: 40px 10px 0px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 3px 5px rgb(0,0,0,0.2);
+}
+
+.card > img {
+    width: inherit;
+}

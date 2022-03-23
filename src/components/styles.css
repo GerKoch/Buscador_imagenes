@@ -8,7 +8,9 @@ html * {
 
 header {
     display: flex;
-    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(216, 209, 209);
     padding: 30px;
     box-shadow: 1px 2px 5px rgb(0,0,0,0.5);
@@ -16,11 +18,21 @@ header {
     position: relative;
 }
 
+header p {
+    display: flex;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: left;
+}
+
 header input {
     outline: none;
     border: solid 1px rgb(216, 210, 210);
     padding: 10px 10px;
     border-radius: 5px;
+    width: 700px;
 }
 
 .container {
@@ -51,3 +63,4 @@ header input {
 .card > img {
     width: inherit;
 }
+

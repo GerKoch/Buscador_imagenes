@@ -6,10 +6,11 @@ import '../components/styles.css';
 const Seeker = () => {
 
     const [photos, setPhotos] = useState([]);
-    console.log(photos)
+    
     return (
         <div>
             <header>
+                <p>Buscador de imagenes de Unsplash</p>
                 <Formik
                     initialValues={{ search: '' }}
                     onSubmit={async values => {
@@ -23,7 +24,7 @@ const Seeker = () => {
                     }}
                 >
                     <Form>
-                        <Field name='search' />
+                        <Field name='search' placeholder='Ingresa el texto de lo que quieres buscar' />
                     </Form>
                 </Formik>
             </header>
@@ -36,6 +37,7 @@ const Seeker = () => {
                                 id={photo.id}
                                 image={photo.urls.regular}
                                 link={photo.links.html}
+                                description={photo.description}
                             />)
                     }
                 </div>

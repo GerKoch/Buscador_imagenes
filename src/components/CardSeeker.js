@@ -1,9 +1,9 @@
 
 const open = url => window.open(url)
 
-const CardSeeker = ({ id, image, link }) =>
+const CardSeeker = ({ id, image, link, description }) =>
     <div className="card">
-        <p>id: {id}</p>
+        <p>{description}</p>
         <img src={image} alt={id} onClick={() => open(link)} />
     </div>
 

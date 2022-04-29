@@ -1,9 +1,16 @@
 import Seeker from './Seeker';
+import Wall from './Wall';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
         <div>
-            <Seeker />
+            <BrowserRouter>
+                <Seeker />
+                <Routes>
+                    <Route path="/" element={<Wall />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 }

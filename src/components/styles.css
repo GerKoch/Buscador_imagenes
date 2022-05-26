@@ -64,3 +64,6 @@ header input {
     width: inherit;
 }
 
+.img {
+    width: 100%;
+}

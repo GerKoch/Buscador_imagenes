@@ -1,10 +1,9 @@
 import picture from '../components/images/image.avif';
 
-
 const Wall = () => {
-    return(
+ return(
         <div>
-            <img src={picture} alt={""}/>
+           <img src={picture} alt={""} className="img"/>
         </div>
     )
 }
